@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { multiply } from '../functions'
+import { multiply } from './functions'
 
 const MultiplyOperation = () => {
  const [result, setResult] = useState(0)
@@ -9,8 +9,8 @@ const MultiplyOperation = () => {
  const handleFormSubmit = (e) => {
     e.preventDefault();
     setResult(multiply(num1, num2))
-    setNum1(0)
-    setNum2(0)
+    setNum1("")
+    setNum2("")
  }
 
  return (
